@@ -26,6 +26,15 @@ playButton.addEventListener("click",
 
             boxElement.append(i);
 
+            boxElement.addEventListener("click",
+
+                function() {
+
+                    boxElement.classList.toggle("clicked");
+                }
+
+            );
+
         }
     }
 );
