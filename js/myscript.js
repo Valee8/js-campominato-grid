@@ -15,29 +15,47 @@ const playButton = document.getElementById("play");
 
 const container = document.getElementById("container");
 
+let numCaselle;
+
 playButton.addEventListener("click",
 
     function() {
-        for (let i = 1; i <= 100; i++) {
 
-            const boxElement = generaCaselle();
+        container.innerHTML = "";
 
+        if (document.getElementById("difficulty").value === "easy") {
+            numCaselle = 100;
+            container.className = "easy";
+        }
+        else if (document.getElementById("difficulty").value === "hard") {
+            numCaselle = 81;
+            container.className = "hard";
+        }
+        else {
+            numCaselle = 49;
+            container.className = "impossible";
+        }
+
+        for (let i = 1; i <= numCaselle; i++) {
+
+            let boxElement = generaCaselle();
+    
             container.append(boxElement);
 
-            boxElement.append(i);
-
-            boxElement.addEventListener("click",
-
-                function() {
-
-                    boxElement.classList.toggle("clicked");
-
-                    console.log(i);
-                }
-
-            );
-
+            boxElement.append(i);            
         }
+
+        boxElement.addEventListener("click",
+
+            function() {
+
+                boxElement.classList.toggle("clicked");
+
+                console.log(i);
+            }
+
+        );
+
     }
 );
 
