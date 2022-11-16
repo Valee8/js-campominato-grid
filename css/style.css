@@ -58,12 +58,23 @@ main {
     min-height: calc(100vh - 126px);
 }
 
+#container.easy .box {
+    width: 10%;
+}
+
+#container.hard .box {
+    width: calc(100% / 9);
+}
+
+#container.impossible .box {
+    width: calc(100% / 7);
+}
+
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #24483C;
-    width: 10%;
     height: 60px;
 }
 
