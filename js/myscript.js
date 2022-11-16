@@ -14,3 +14,26 @@
 const playButton = document.getElementById("play");
 
 const container = document.getElementById("container");
+
+playButton.addEventListener("click",
+
+    function() {
+        for (let i = 1; i <= 100; i++) {
+
+            const boxElement = generaCaselle();
+
+            container.append(boxElement);
+
+            boxElement.append(i);
+
+        }
+    }
+);
+
+
+function generaCaselle() {
+    const div = document.createElement("div");
+    div.classList.add("box");
+
+    return div;
+}
