@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #7FFFD4;
+}
+
+#container {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: red;
+    height: 100%;
+}
+
+header {
+    background-color: #fff;
+    height: 75px;
+}
+
+main {
+    padding: 40px;
+    height: calc(100vh - 126px);
+}
+
+footer {
+    background-color: #fff;
+    height: 51px;
+}
