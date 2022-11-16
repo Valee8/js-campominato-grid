@@ -46,14 +46,14 @@ playButton.addEventListener("click",
             
             boxElement.addEventListener("click",
 
-            function() {
+                function() {
 
-                boxElement.classList.toggle("clicked");
+                    boxElement.classList.toggle("clicked");
 
-                console.log(i);
-            }
+                    console.log(i);
+                }
 
-        );
+            );
         }
 
     }
