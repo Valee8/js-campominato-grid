@@ -36,6 +36,18 @@ header {
     vertical-align: middle;
 }
 
+#play {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.8rem;
+    background-color: #E9E9ED;
+    border-radius: 3px;
+    border: 1px solid #A5A5B0;
+    font-weight: 600;
+    padding: 0 20px;
+
+}
+
 main {
     padding: 40px;
     height: calc(100vh - 126px);
