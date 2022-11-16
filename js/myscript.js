@@ -17,12 +17,15 @@ const container = document.getElementById("container");
 
 let numCaselle;
 
+// Cliccando il bottone play compaiono le caselle
 playButton.addEventListener("click",
 
     function() {
 
+        // Non aggiungo altro contenuto se clicco di nuovo il bottone
         container.innerHTML = "";
 
+        // Numero caselle diverso a seconda della difficoltà
         if (document.getElementById("difficulty").value === "easy") {
             numCaselle = 100;
             container.className = "easy";
@@ -36,14 +39,17 @@ playButton.addEventListener("click",
             container.className = "impossible";
         }
 
+        // Genero numero caselle
         for (let i = 1; i <= numCaselle; i++) {
 
+            // Richiamo funzione
             let boxElement = generaCaselle();
     
             container.append(boxElement);
 
             boxElement.append(i);    
             
+            // Al click le caselle cambiano colore e appare il numero in console log
             boxElement.addEventListener("click",
 
                 function() {
@@ -59,7 +65,7 @@ playButton.addEventListener("click",
     }
 );
 
-
+// Funzione per creare caselle
 function generaCaselle() {
     const div = document.createElement("div");
     div.classList.add("box");
