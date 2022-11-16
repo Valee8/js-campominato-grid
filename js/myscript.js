@@ -54,7 +54,7 @@ playButton.addEventListener("click",
 
                 function() {
 
-                    boxElement.classList.toggle("clicked");
+                    boxElement.classList.add("clicked");
 
                     console.log(i);
                 }
