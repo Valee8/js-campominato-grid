@@ -58,6 +58,18 @@ main {
     min-height: calc(100vh - 126px);
 }
 
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #24483C;
+    width: 10%;
+    height: 60px;
+}
+
+.box.clicked {
+    background-color: blue;
+}
 
 footer {
     background-color: #fff;
