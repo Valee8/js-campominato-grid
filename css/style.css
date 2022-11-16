@@ -41,7 +41,7 @@ header {
     vertical-align: middle;
 }
 
-#play {
+#play, #difficulty {
     text-decoration: none;
     color: #000;
     font-size: 0.8rem;
@@ -49,8 +49,17 @@ header {
     border-radius: 3px;
     border: 1px solid #A5A5B0;
     font-weight: 600;
-    padding: 0 20px;
+    padding: 1px 20px;
 
+}
+
+#difficulty {
+    padding: 0 20px 1px 0;
+}
+
+.bottoni label {
+    font-size: 0.9rem;
+    vertical-align: middle;
 }
 
 main {
