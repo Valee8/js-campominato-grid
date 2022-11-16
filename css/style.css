@@ -54,6 +54,8 @@ header {
 }
 
 main {
+    display: flex;
+    align-items: center;
     padding: 40px;
     min-height: calc(100vh - 126px);
 }
