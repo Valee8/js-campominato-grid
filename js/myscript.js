@@ -42,10 +42,9 @@ playButton.addEventListener("click",
     
             container.append(boxElement);
 
-            boxElement.append(i);            
-        }
-
-        boxElement.addEventListener("click",
+            boxElement.append(i);    
+            
+            boxElement.addEventListener("click",
 
             function() {
 
@@ -55,6 +54,7 @@ playButton.addEventListener("click",
             }
 
         );
+        }
 
     }
 );
